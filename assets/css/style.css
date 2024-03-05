@@ -1,8 +1,8 @@
 :root {
-  --primary-color: #f969f08c;
-  --chathams_blue: #f969f08c;
-  --tamarillo: #df1e0db0;
-  --yellow_sea: #efc97d8a;
+  --primary-color: #789bb17a;
+  --chathams_blue: #789bb17a;
+  --tamarillo: #dfd89381;
+  --yellow_sea: #fed50676;
 }
 
 * {
@@ -10,7 +10,7 @@
 }
 
 body {
-  background-color: #f4f4f49d;
+  background-color: #f4f4f4;
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
@@ -93,14 +93,15 @@ button:focus {
 }
 
 /* Header Styles
-  -------------------------------------------------- */
+-------------------------------------------------- */
 
 header .bg-gradient {
   background: rgb(216, 216, 216);
 }
 
 body {
-  background: url("../img/back-bg.jpg") no-repeat fixed center center / cover;
+  background: url("../img/back-bg.jpg") no-repeat fixed bottom;
+  background-size: cover;
 }
 
 header .navbar {
@@ -129,10 +130,11 @@ header h3 {
 }
 
 header h4 {
-  font: normal normal 600 18px/28px Oswald;
+  font: 25px Oswald;
   letter-spacing: 0.36px;
   color: #191919;
   text-transform: uppercase;
+  font-weight: bold;
 }
 
 header p {
@@ -168,7 +170,7 @@ header p {
 }
 
 /* Sticky footer styles
-  -------------------------------------------------- */
+-------------------------------------------------- */
 html {
   position: relative;
   min-height: 100%;
@@ -191,7 +193,7 @@ body {
 }
 
 /* Custom page CSS
-  -------------------------------------------------- */
+-------------------------------------------------- */
 /* Not required for template or sticky footer method. */
 
 body > .container {
@@ -234,11 +236,11 @@ footer {
 }
 
 .theme-switch-chathams_blue {
-  background-color: var(--primary-color);
+  background-color: var(--chathams_blue);
 }
 
 .theme-switch-chathams_blue:hover {
-  box-shadow: 2px 2px 2px var(--primary-color);
+  box-shadow: 2px 2px 2px var(--chathams_blue);
 }
 
 .theme-switch-tamarillo {
@@ -275,7 +277,7 @@ footer {
   width: fit-content;
   float: right;
   block-size: fit-content;
-  background-color: #eff2f78a;
+  background-color: #eff2f7d1;
 }
 .receiver-msg {
   float: left;
@@ -292,5 +294,34 @@ footer {
 }
 .card {
   height: 70vh;
-  background-color: #dedede86;
+  background-color: rgba(255, 255, 255, 0.525);
+}
+#emoji-btn {
+  position: absolute;
+  font-size: 1.2rem;
+  background: transparent;
+  right: 38%;
+  top: 2px;
+  opacity: 0.5;
+  border: none;
+  cursor: pointer;
+}
+img {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  right: 16%;
+  top: 2px;
+}
+.img-thumbnail {
+  height: 100px;
+  width: 100px;
+}
+.message-image {
+  height: 200px;
+  width: 200px;
+}
+.image-content {
+  display: flex;
+  flex-direction: column;
 }
